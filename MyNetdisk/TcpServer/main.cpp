@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     DBInstance::GetInstance().Init_DB();
-
     MyTcpServer::GetInstance().TcpRunning();
 
     return a.exec();
