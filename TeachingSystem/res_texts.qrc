@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/path_inlays">
+        <file>src/PathPro/path_inlay1.txt</file>
+        <file>src/PathPro/path_inlay2.txt</file>
+        <file>src/PathPro/path_inlay3.txt</file>
+    </qresource>
+    <qresource prefix="/tsp_inlays">
+        <file>src/TSPPro/tsp_inlay1.txt</file>
+        <file>src/TSPPro/tsp_inlay2.txt</file>
+    </qresource>
+    <qresource prefix="/bp_inlays">
+        <file>src/BackpackPro/bp_inlay1.txt</file>
+        <file>src/BackpackPro/bp_inlay2.txt</file>
+    </qresource>
+</RCC>

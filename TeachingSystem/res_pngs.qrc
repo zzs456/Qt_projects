@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/myMB_pngs">
+        <file>res/myMB_pngs/fail.png</file>
+        <file>res/myMB_pngs/info.png</file>
+        <file>res/myMB_pngs/question.png</file>
+        <file>res/myMB_pngs/success.png</file>
+    </qresource>
+    <qresource prefix="/algotithm_pngs">
+        <file alias="3">res/algotithm_pngs/ACO.png</file>
+        <file>res/algotithm_pngs/c1.png</file>
+        <file>res/algotithm_pngs/c2.png</file>
+        <file alias="5">res/algotithm_pngs/FCM.png</file>
+        <file alias="1">res/algotithm_pngs/GA.png</file>
+        <file alias="4">res/algotithm_pngs/IA.png</file>
+        <file>res/algotithm_pngs/login_background.png</file>
+        <file alias="6">res/algotithm_pngs/NN.png</file>
+        <file alias="2">res/algotithm_pngs/PSO.png</file>
+        <file>res/algotithm_pngs/ACO.bmp</file>
+        <file>res/algotithm_pngs/FCM.bmp</file>
+        <file>res/algotithm_pngs/GA.bmp</file>
+        <file>res/algotithm_pngs/IA.bmp</file>
+        <file>res/algotithm_pngs/NN.bmp</file>
+        <file>res/algotithm_pngs/PSO.bmp</file>
+        <file>res/algotithm_pngs/Introduce.bmp</file>
+        <file>res/algotithm_pngs/vs.bmp</file>
+    </qresource>
+</RCC>

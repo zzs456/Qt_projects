@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProblemAndAlgorithm</class>
+ <widget class="QWidget" name="ProblemAndAlgorithm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1212</width>
+    <height>817</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>admin</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../res_Icon.qrc">
+    <normaloff>:/icon/res/icons/window_icon.bmp</normaloff>:/icon/res/icons/window_icon.bmp</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="proalgo_leftWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item>
+          <widget class="QTreeWidget" name="algo_treeWidget">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTreeWidget#algo_treeWidget{
+	border:none;
+	border-top: 1px solid rgb(200,200,200);
+}</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="headerHidden">
+            <bool>true</bool>
+           </property>
+           <column>
+            <property name="text">
+             <string>算法学习</string>
+            </property>
+           </column>
+           <item>
+            <property name="text">
+             <string>遗传算法</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="icon">
+             <iconset resource="../../res_pngs.qrc">
+              <normaloff>:/algotithm_pngs/res/algotithm_pngs/GA.bmp</normaloff>:/algotithm_pngs/res/algotithm_pngs/GA.bmp</iconset>
+            </property>
+            <item>
+             <property name="text">
+              <string>简介</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_pngs.qrc">
+               <normaloff>:/algotithm_pngs/res/algotithm_pngs/Introduce.bmp</normaloff>:/algotithm_pngs/res/algotithm_pngs/Introduce.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>函数优化问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/func_Extreme.bmp</normaloff>:/problem_icons/res/problems_icons/func_Extreme.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>路径规划问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/path_plan.bmp</normaloff>:/problem_icons/res/problems_icons/path_plan.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>背包问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/bp_pro.bmp</normaloff>:/problem_icons/res/problems_icons/bp_pro.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>旅行商问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/tsp_pro.bmp</normaloff>:/problem_icons/res/problems_icons/tsp_pro.bmp</iconset>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>粒子群优化算法</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="icon">
+             <iconset resource="../../res_pngs.qrc">
+              <normaloff>:/algotithm_pngs/res/algotithm_pngs/PSO.bmp</normaloff>:/algotithm_pngs/res/algotithm_pngs/PSO.bmp</iconset>
+            </property>
+            <item>
+             <property name="text">
+              <string>简介</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_pngs.qrc">
+               <normaloff>:/algotithm_pngs/res/algotithm_pngs/Introduce.bmp</normaloff>:/algotithm_pngs/res/algotithm_pngs/Introduce.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>函数优化问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/func_Extreme.bmp</normaloff>:/problem_icons/res/problems_icons/func_Extreme.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>背包问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/bp_pro.bmp</normaloff>:/problem_icons/res/problems_icons/bp_pro.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>旅行商问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/tsp_pro.bmp</normaloff>:/problem_icons/res/problems_icons/tsp_pro.bmp</iconset>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>蚁群算法</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="icon">
+             <iconset resource="../../res_pngs.qrc">
+              <normaloff>:/algotithm_pngs/res/algotithm_pngs/ACO.bmp</normaloff>:/algotithm_pngs/res/algotithm_pngs/ACO.bmp</iconset>
+            </property>
+            <item>
+             <property name="text">
+              <string>简介</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_pngs.qrc">
+               <normaloff>:/algotithm_pngs/res/algotithm_pngs/Introduce.bmp</normaloff>:/algotithm_pngs/res/algotithm_pngs/Introduce.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>函数优化问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/func_Extreme.bmp</normaloff>:/problem_icons/res/problems_icons/func_Extreme.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>路径规划问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/path_plan.bmp</normaloff>:/problem_icons/res/problems_icons/path_plan.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>背包问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/bp_pro.bmp</normaloff>:/problem_icons/res/problems_icons/bp_pro.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>旅行商问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/tsp_pro.bmp</normaloff>:/problem_icons/res/problems_icons/tsp_pro.bmp</iconset>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>算法比较</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="icon">
+             <iconset resource="../../res_pngs.qrc">
+              <normaloff>:/algotithm_pngs/res/algotithm_pngs/vs.bmp</normaloff>:/algotithm_pngs/res/algotithm_pngs/vs.bmp</iconset>
+            </property>
+            <item>
+             <property name="text">
+              <string>函数优化问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/func_Extreme.bmp</normaloff>:/problem_icons/res/problems_icons/func_Extreme.bmp</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>旅行商问题</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="icon">
+              <iconset resource="../../res_Icon.qrc">
+               <normaloff>:/problem_icons/res/problems_icons/tsp_pro.bmp</normaloff>:/problem_icons/res/problems_icons/tsp_pro.bmp</iconset>
+             </property>
+            </item>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="proalgo_returnMainWidgetBtn">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>返回</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="proalgo_stackedWidget">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../res_pngs.qrc"/>
+  <include location="../../res_Icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

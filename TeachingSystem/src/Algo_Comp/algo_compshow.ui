@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Algo_CompShow</class>
+ <widget class="QWidget" name="Algo_CompShow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="AlgoCompW">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>点击子项对比算法性能</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="FuncCompInfoW">
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,100,1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <item row="2" column="1">
+          <widget class="QLabel" name="trigoFuncAccu">
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0.001</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="trigoFuncDomain">
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>[0,1]</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="trigoFuncName">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>y = xcos(4x)+xsin(20x)+2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>精度  :</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>函数  :</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>定义域  :</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QCustomPlot" name="trigoFuncPlot" native="true"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="FuncStartDemo">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>开始演示</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TspCompInfoW">
+      <layout class="QVBoxLayout" name="verticalLayout_3" stretch="40,120,1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="TspPointDatasTab" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <attribute name="horizontalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>id</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>x</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>y</string>
+             </property>
+            </row>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <column/>
+            <item row="0" column="0">
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string>2</string>
+             </property>
+            </item>
+            <item row="0" column="2">
+             <property name="text">
+              <string>3</string>
+             </property>
+            </item>
+            <item row="0" column="3">
+             <property name="text">
+              <string>4</string>
+             </property>
+            </item>
+            <item row="0" column="4">
+             <property name="text">
+              <string>5</string>
+             </property>
+            </item>
+            <item row="0" column="5">
+             <property name="text">
+              <string>6</string>
+             </property>
+            </item>
+            <item row="0" column="6">
+             <property name="text">
+              <string>7</string>
+             </property>
+            </item>
+            <item row="0" column="7">
+             <property name="text">
+              <string>8</string>
+             </property>
+            </item>
+            <item row="0" column="8">
+             <property name="text">
+              <string>9</string>
+             </property>
+            </item>
+            <item row="0" column="9">
+             <property name="text">
+              <string>10</string>
+             </property>
+            </item>
+            <item row="0" column="10">
+             <property name="text">
+              <string>11</string>
+             </property>
+            </item>
+            <item row="0" column="11">
+             <property name="text">
+              <string>12</string>
+             </property>
+            </item>
+            <item row="0" column="12">
+             <property name="text">
+              <string>13</string>
+             </property>
+            </item>
+            <item row="0" column="13">
+             <property name="text">
+              <string>14</string>
+             </property>
+            </item>
+            <item row="0" column="14">
+             <property name="text">
+              <string>15</string>
+             </property>
+            </item>
+            <item row="0" column="15">
+             <property name="text">
+              <string>16</string>
+             </property>
+            </item>
+            <item row="0" column="16">
+             <property name="text">
+              <string>17</string>
+             </property>
+            </item>
+            <item row="0" column="17">
+             <property name="text">
+              <string>18</string>
+             </property>
+            </item>
+            <item row="0" column="18">
+             <property name="text">
+              <string>19</string>
+             </property>
+            </item>
+            <item row="0" column="19">
+             <property name="text">
+              <string>20</string>
+             </property>
+            </item>
+            <item row="0" column="20">
+             <property name="text">
+              <string>21</string>
+             </property>
+            </item>
+            <item row="0" column="21">
+             <property name="text">
+              <string>22</string>
+             </property>
+            </item>
+            <item row="0" column="22">
+             <property name="text">
+              <string>23</string>
+             </property>
+            </item>
+            <item row="0" column="23">
+             <property name="text">
+              <string>24</string>
+             </property>
+            </item>
+            <item row="0" column="24">
+             <property name="text">
+              <string>25</string>
+             </property>
+            </item>
+            <item row="0" column="25">
+             <property name="text">
+              <string>26</string>
+             </property>
+            </item>
+            <item row="0" column="26">
+             <property name="text">
+              <string>27</string>
+             </property>
+            </item>
+            <item row="0" column="27">
+             <property name="text">
+              <string>28</string>
+             </property>
+            </item>
+            <item row="0" column="28">
+             <property name="text">
+              <string>29</string>
+             </property>
+            </item>
+            <item row="0" column="29">
+             <property name="text">
+              <string>30</string>
+             </property>
+            </item>
+            <item row="0" column="30">
+             <property name="text">
+              <string>31</string>
+             </property>
+            </item>
+            <item row="1" column="0">
+             <property name="text">
+              <string>1304</string>
+             </property>
+            </item>
+            <item row="1" column="1">
+             <property name="text">
+              <string>3639</string>
+             </property>
+            </item>
+            <item row="1" column="2">
+             <property name="text">
+              <string>4177</string>
+             </property>
+            </item>
+            <item row="1" column="3">
+             <property name="text">
+              <string>3712</string>
+             </property>
+            </item>
+            <item row="1" column="4">
+             <property name="text">
+              <string>3488</string>
+             </property>
+            </item>
+            <item row="1" column="5">
+             <property name="text">
+              <string>2381</string>
+             </property>
+            </item>
+            <item row="1" column="6">
+             <property name="text">
+              <string>1332</string>
+             </property>
+            </item>
+            <item row="1" column="7">
+             <property name="text">
+              <string>3715</string>
+             </property>
+            </item>
+            <item row="1" column="8">
+             <property name="text">
+              <string>3326</string>
+             </property>
+            </item>
+            <item row="1" column="9">
+             <property name="text">
+              <string>3238</string>
+             </property>
+            </item>
+            <item row="1" column="10">
+             <property name="text">
+              <string>4196</string>
+             </property>
+            </item>
+            <item row="1" column="11">
+             <property name="text">
+              <string>4312</string>
+             </property>
+            </item>
+            <item row="1" column="12">
+             <property name="text">
+              <string>4386</string>
+             </property>
+            </item>
+            <item row="1" column="13">
+             <property name="text">
+              <string>3007</string>
+             </property>
+            </item>
+            <item row="1" column="14">
+             <property name="text">
+              <string>3918</string>
+             </property>
+            </item>
+            <item row="1" column="15">
+             <property name="text">
+              <string>4061</string>
+             </property>
+            </item>
+            <item row="1" column="16">
+             <property name="text">
+              <string>4263</string>
+             </property>
+            </item>
+            <item row="1" column="17">
+             <property name="text">
+              <string>3429</string>
+             </property>
+            </item>
+            <item row="1" column="18">
+             <property name="text">
+              <string>3507</string>
+             </property>
+            </item>
+            <item row="1" column="19">
+             <property name="text">
+              <string>3780</string>
+             </property>
+            </item>
+            <item row="1" column="20">
+             <property name="text">
+              <string>3676</string>
+             </property>
+            </item>
+            <item row="1" column="21">
+             <property name="text">
+              <string>4029</string>
+             </property>
+            </item>
+            <item row="1" column="22">
+             <property name="text">
+              <string>2562</string>
+             </property>
+            </item>
+            <item row="1" column="23">
+             <property name="text">
+              <string>2788</string>
+             </property>
+            </item>
+            <item row="1" column="24">
+             <property name="text">
+              <string>3394</string>
+             </property>
+            </item>
+            <item row="1" column="25">
+             <property name="text">
+              <string>3439</string>
+             </property>
+            </item>
+            <item row="1" column="26">
+             <property name="text">
+              <string>2935</string>
+             </property>
+            </item>
+            <item row="1" column="27">
+             <property name="text">
+              <string>2778</string>
+             </property>
+            </item>
+            <item row="1" column="28">
+             <property name="text">
+              <string>2370</string>
+             </property>
+            </item>
+            <item row="1" column="29">
+             <property name="text">
+              <string>3140</string>
+             </property>
+            </item>
+            <item row="1" column="30">
+             <property name="text">
+              <string>2545</string>
+             </property>
+            </item>
+            <item row="2" column="0">
+             <property name="text">
+              <string>2312</string>
+             </property>
+            </item>
+            <item row="2" column="1">
+             <property name="text">
+              <string>1315</string>
+             </property>
+            </item>
+            <item row="2" column="2">
+             <property name="text">
+              <string>2244</string>
+             </property>
+            </item>
+            <item row="2" column="3">
+             <property name="text">
+              <string>1399</string>
+             </property>
+            </item>
+            <item row="2" column="4">
+             <property name="text">
+              <string>1535</string>
+             </property>
+            </item>
+            <item row="2" column="5">
+             <property name="text">
+              <string>1676</string>
+             </property>
+            </item>
+            <item row="2" column="6">
+             <property name="text">
+              <string>695</string>
+             </property>
+            </item>
+            <item row="2" column="7">
+             <property name="text">
+              <string>1678</string>
+             </property>
+            </item>
+            <item row="2" column="8">
+             <property name="text">
+              <string>1556</string>
+             </property>
+            </item>
+            <item row="2" column="9">
+             <property name="text">
+              <string>1229</string>
+             </property>
+            </item>
+            <item row="2" column="10">
+             <property name="text">
+              <string>1004</string>
+             </property>
+            </item>
+            <item row="2" column="11">
+             <property name="text">
+              <string>790</string>
+             </property>
+            </item>
+            <item row="2" column="12">
+             <property name="text">
+              <string>570</string>
+             </property>
+            </item>
+            <item row="2" column="13">
+             <property name="text">
+              <string>1970</string>
+             </property>
+            </item>
+            <item row="2" column="14">
+             <property name="text">
+              <string>2179</string>
+             </property>
+            </item>
+            <item row="2" column="15">
+             <property name="text">
+              <string>2370</string>
+             </property>
+            </item>
+            <item row="2" column="16">
+             <property name="text">
+              <string>2931</string>
+             </property>
+            </item>
+            <item row="2" column="17">
+             <property name="text">
+              <string>1908</string>
+             </property>
+            </item>
+            <item row="2" column="18">
+             <property name="text">
+              <string>2367</string>
+             </property>
+            </item>
+            <item row="2" column="19">
+             <property name="text">
+              <string>2212</string>
+             </property>
+            </item>
+            <item row="2" column="20">
+             <property name="text">
+              <string>2578</string>
+             </property>
+            </item>
+            <item row="2" column="21">
+             <property name="text">
+              <string>2838</string>
+             </property>
+            </item>
+            <item row="2" column="22">
+             <property name="text">
+              <string>1756</string>
+             </property>
+            </item>
+            <item row="2" column="23">
+             <property name="text">
+              <string>1491</string>
+             </property>
+            </item>
+            <item row="2" column="24">
+             <property name="text">
+              <string>2643</string>
+             </property>
+            </item>
+            <item row="2" column="25">
+             <property name="text">
+              <string>3201</string>
+             </property>
+            </item>
+            <item row="2" column="26">
+             <property name="text">
+              <string>3240</string>
+             </property>
+            </item>
+            <item row="2" column="27">
+             <property name="text">
+              <string>2826</string>
+             </property>
+            </item>
+            <item row="2" column="28">
+             <property name="text">
+              <string>2975</string>
+             </property>
+            </item>
+            <item row="2" column="29">
+             <property name="text">
+              <string>3550</string>
+             </property>
+            </item>
+            <item row="2" column="30">
+             <property name="text">
+              <string>2357</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCustomPlot" name="thirtyTspPlot" native="true"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="TspStartDemo">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>开始演示</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

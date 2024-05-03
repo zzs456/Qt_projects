@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>res/icons/window_icon.bmp</file>
+        <file>res/icons/login_icon.bmp</file>
+        <file>res/icons/help_icon.bmp</file>
+        <file>res/icons/homepage_icon.bmp</file>
+        <file>res/icons/quit_icon.bmp</file>
+        <file>res/icons/setting_icon.bmp</file>
+    </qresource>
+    <qresource prefix="/problem_icons">
+        <file>res/problems_icons/func_Extreme.bmp</file>
+        <file>res/problems_icons/path_plan.bmp</file>
+        <file>res/problems_icons/tsp_pro.bmp</file>
+        <file>res/problems_icons/bp_pro.bmp</file>
+    </qresource>
+</RCC>

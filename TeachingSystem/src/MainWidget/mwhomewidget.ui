@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MWHomeWidget</class>
+ <widget class="QWidget" name="MWHomeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>12</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="3,2">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <item>
+      <widget class="MWHomePicWidget" name="mwHome_picWidget" native="true"/>
+     </item>
+     <item>
+      <widget class="MWHomeProWidget" name="mwHome_proWidget" native="true"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MWHomePicWidget</class>
+   <extends>QWidget</extends>
+   <header>mwhomepicwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MWHomeProWidget</class>
+   <extends>QWidget</extends>
+   <header>mwhomeprowidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
